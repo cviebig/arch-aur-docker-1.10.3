@@ -37,6 +37,7 @@ prepare() {
 build() {
   cd docker
   export AUTO_GOPATH=1
+  export DOCKER_BUILDTAGS='exclude_graphdriver_btrfs'
   hack/make.sh dynbinary
   # man pages
   man/md2man-all.sh
