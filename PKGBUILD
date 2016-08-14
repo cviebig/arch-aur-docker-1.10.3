@@ -10,9 +10,8 @@ arch=('x86_64')
 url='https://www.docker.com/'
 license=('Apache')
 depends=('bridge-utils' 'iproute2' 'device-mapper' 'sqlite' 'systemd')
-makedepends=('git' 'go' 'btrfs-progs' 'go-md2man')
-optdepends=('btrfs-progs: btrfs backend support'
-            'lxc: lxc backend support')
+makedepends=('git' 'go' 'go-md2man')
+optdepends=('lxc: lxc backend support')
 # don't strip binaries! A sha1 is used to check binary consistency.
 options=('!strip')
 install=$pkgname.install
